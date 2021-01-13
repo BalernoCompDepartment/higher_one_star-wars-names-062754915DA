@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "NameOneNoCaps",
+      "setup": "javac *.java",
+      "run": "java Main",
+      "input": "Robert\r\nMarshall\r\nMacDonald\r\nDundee",
+      "output": "Mar[rR]o Mac[dD]u",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "LowerCaseCheck",
+      "setup": "javac *.java",
+      "run": "java Main",
+      "input": "Louise\r\nHodge\r\nReid\r\nLondon",
+      "output": "Hodlo Reilo",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 3
+    }
+  ]
+}
