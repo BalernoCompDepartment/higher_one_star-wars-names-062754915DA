@@ -22,7 +22,7 @@ class Main {
     String nameSectionTwo = firstName.substring(0,2);
     String nameSectionThree = mothersMaidenName.substring(0,3);
     String nameSectionFour = birthCity.substring(0,2);  
-        starwarsname = nameSectionOne + nameSectionTwo + nameSectionThree + nameSectionFour;
+        starwarsname = nameSectionOne + nameSectionTwo.toLowerCase() + " " + nameSectionThree + nameSectionFour.toLowerCase();
     //Step 6: display "your star wars name is " + starwarsname
     System.out.println("Your Star Wars name is " + starwarsname);
   }
